@@ -5,14 +5,17 @@
  @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 
 //plagins
-@import '../node_modules/slick-carousel/slick/slick';
-@import '../node_modules/slick-carousel/slick/slick-theme';
-//@import '../node_modules/animate.css/animate.min.css';
+
+@import 'vendor/animate.css';
+@import 'vendor/bootstrap.css';
+@import 'vendor/bootstrap-theme.css';
+@import 'vendor/slick.css';
+@import 'vendor/slick-theme.css';
+
+
 
 //modyles
 @import 'modules/buttons';
-
-
 
 //styles
 @import 'blocks/header';

@@ -5,9 +5,9 @@ module.exports = function(grunt) {
     dist: {
       files: [{
         expand: true,
-        cwd: 'styles',
+        cwd: 'src/styles',
         src: ['main.scss'],
-        dest: 'styles',
+        dest: 'src/styles',
         ext: '.css'
       }]
     }
@@ -15,9 +15,14 @@ module.exports = function(grunt) {
   
   concat:{
     dist:{
-      src:['styles/variables.scss','styles/style.scss'],
-      dest:'styles/main.scss'
-    }
+      src:['src/styles/variables.scss','src/styles/base.scss','src/styles/style.scss'],
+      dest:'src/styles/main.scss'
+    },
+   
+    dist:{
+      src:['src/js/vendor/bootstrap.js', 'src/js/vendor/slick.js', 'src/js/script.js'],
+      dest:'public/mainscript.js'
+    },
   },    
 
   watch: {

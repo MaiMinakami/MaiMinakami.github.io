@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="node_modules/animate.css/animate.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
+    <title>Portfolio</title>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <script type="text/javascript" src="public/mainscript.js"></script>
   </head>
   <body>
     <header>
@@ -34,7 +34,6 @@
               </div>    
             </div>
           </div>
-
         </div>
       </div>
     </header>
@@ -46,7 +45,7 @@
               <div class="service">
                 <h2 class="service__title">Maecenas luctus lectus</h2>
                 <div class="service__icon-container">
-                  <img src="images/IMG_0740+.jpg" class="img-responsive" alt="foto">
+                  <img src="src/images/IMG_0740+.jpg" class="img-responsive" alt="foto">
                 </div>
                 <p class="service__subtitle">Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
                 <div class="service__button-container">
@@ -58,7 +57,7 @@
               <div class="service">
                 <h2 class="service__title">Maecenas luctus lectus</h2>
                 <div class="service__icon-container">
-                  <img src="images/IMG_0789+.jpg" class="img-responsive" alt="foto">
+                  <img src="src/images/IMG_0789+.jpg" class="img-responsive" alt="foto">
                 </div>
                 <p class="service__subtitle">Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
                 <div class="service__button-container">
@@ -70,7 +69,7 @@
               <div class="service">
                 <h2 class="service__title">Maecenas luctus lectus</h2>
                 <div class="service__icon-container">
-                  <img src="images/IMG_0726+.jpg" class="img-responsive" alt="foto">
+                  <img src="src/images/IMG_0726+.jpg" class="img-responsive" alt="foto">
                 </div>
                 <p class="service__subtitle">Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
                 <div class="service__button-container">
@@ -90,24 +89,27 @@
               <h2 class="carousel-products__title">Praesent mattis condimentum</h2>
               <div class="carousel-products__images">
                 <div class="your-class">
-                  <div><img src="images/IMG_7734+.jpg" class="img-responsive" alt="foto"></div>
-                  <div><img src="images/IMG_7735+.jpg" class="img-responsive" alt="foto"></div>
-                     <div><img src="images/IMG_7758+.jpg" class="img-responsive" alt="foto"></div>
-                  <div><img src="images/IMG_7789+.jpg" class="img-responsive" alt="foto"></div>
-                  <div><img src="images/IMG_7827+.jpg" class="img-responsive" alt="foto"></div>
-                     <div><img src="images/IMG_7734+.jpg" class="img-responsive" alt="foto"></div>
-                  
+                  <div><img src="src/images/IMG_7734+.jpg" class="img-responsive" alt="foto"></div>
+                  <div><img src="src/images/IMG_7735+.jpg" class="img-responsive" alt="foto"></div>
+                  <div><img src="src/images/IMG_7758+.jpg" class="img-responsive" alt="foto"></div>
+                  <div><img src="src/images/IMG_7789+.jpg" class="img-responsive" alt="foto"></div>
+                  <div><img src="src/images/IMG_7827+.jpg" class="img-responsive" alt="foto"></div>
+                  <div><img src="src/images/IMG_7734+.jpg" class="img-responsive" alt="foto"></div>      
                 </div>
               </div>
               <p class="carousel-products__description">Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus nibh in augue praesent congue rutrum. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus nibh in augue praesent congue rutrum.</p>
-              <div class="carousel-products__button-container"><button class="button"><span>Read More</span></button></div>
+              <div class="carousel-products__button-container">
+                <button class="button">
+                  <span>Read More</span>
+                </button>
+              </div>
             </div>
           </div>
           <div class="col-lg-2 hidden-md hidden-sm hidden-xs">
             <div class="gadget">
               <h2 class="gadget__title">Nulla  eleifend</h2>
               <div class="gadget__icon-container">
-                <img src="images/IMG_7789+.jpg" class="img-responsive" alt="foto">
+                <img src="src/images/IMG_7789+.jpg" class="img-responsive" alt="foto">
               </div>
               <ul class="gadget__list">
                 <li class="gadget__model"><p>Maecenas luctus</p></li>
@@ -124,7 +126,7 @@
             <div class="gadget">
               <h2 class="gadget__title">Nulla  eleifend</h2>
               <div class="gadget__icon-container">
-                <img src="images/IMG_0789+.jpg" class="img-responsive" alt="foto">
+                <img src="src/images/IMG_0789+.jpg" class="img-responsive" alt="foto">
               </div>
               <ul class="gadget__list">
                 <li class="gadget__model"><p>Maecenas luctus</p></li>
@@ -203,17 +205,29 @@
                     <ul class="nav nav-tabs">
                       <li class="active">
                         <a href="#sell-today1" data-toggle="tab">
-                          <div class="sell__image-container"><div><img src="images/IMG_0789+.jpg" class="img-responsive" alt="foto"></div></div>
+                          <div class="sell__image-container">
+                            <div>
+                              <img src="src/images/IMG_0789+.jpg" class="img-responsive" alt="foto">
+                            </div>
+                          </div>
                         </a>
                       </li>
                       <li>
                         <a href="#sell-today2" data-toggle="tab">
-                          <div class="sell__image-container"><div><img src="images/IMG_0726+.jpg" class="img-responsive" alt="foto"></div></div>
+                          <div class="sell__image-container">
+                            <div>
+                              <img src="src/images/IMG_0726+.jpg" class="img-responsive" alt="foto">
+                            </div>
+                          </div>
                         </a>
                       </li>
                       <li>
                         <a href="#sell-today3" data-toggle="tab">
-                          <div class="sell__image-container"><div><img src="images/IMG_0740+.jpg" class="img-responsive" alt="foto"></div></div>
+                          <div class="sell__image-container">
+                            <div>
+                              <img src="src/images/IMG_0740+.jpg" class="img-responsive" alt="foto">
+                            </div>
+                          </div>
                         </a>
                       </li>    
                     </ul>
@@ -240,17 +254,29 @@
                     <ul class="nav nav-tabs">
                       <li class="active">
                         <a href="#sell-nextweek1" data-toggle="tab">
-                          <div class="sell__image-container"><div><img src="images/IMG_0687+.jpg" class="img-responsive" alt="foto"></div></div>
+                          <div class="sell__image-container">
+                            <div>
+                              <img src="src/images/IMG_0687+.jpg" class="img-responsive" alt="foto">
+                            </div>
+                          </div>
                         </a>
                       </li>
                       <li>
                         <a href="#sell-nextweek2" data-toggle="tab">
-                          <div class="sell__image-container"><div><img src="images/IMG_0726+.jpg" class="img-responsive" alt="foto"></div></div>
+                          <div class="sell__image-container">
+                            <div>
+                              <img src="src/images/IMG_0726+.jpg" class="img-responsive" alt="foto">
+                            </div>
+                          </div>
                         </a>
                       </li>
                       <li>
                         <a href="#sell-nextweek3" data-toggle="tab">
-                          <div class="sell__image-container"><div><img src="images/IMG_7827+.jpg" class="img-responsive" alt="foto"></div></div>
+                          <div class="sell__image-container">
+                            <div>
+                              <img src="src/images/IMG_7827+.jpg" class="img-responsive" alt="foto">
+                            </div>
+                          </div>
                         </a>
                       </li>    
                     </ul>
@@ -269,14 +295,13 @@
                     </div>
                   </div> 
                 </div>
-                </div>           
-              
+              </div>              
             </div>
             <div class="hidden-lg visible-md col-md-6 visible-sm col-sm-6 visible-xs">
                 <div class="gadget">
                   <h2 class="gadget__title">Nulla  eleifend</h2>
                   <div class="gadget__icon-container">
-                    <img src="images/IMG_3203-1000x400.jpg" class="img-responsive" alt="foto">
+                    <img src="src/images/IMG_0789+.jpg" class="img-responsive" alt="foto">
                   </div>
                   <ul class="gadget__list">
                     <li class="gadget__model"><p>Maecenas luctus</p></li>
@@ -299,30 +324,10 @@
           <div class="col-lg-12">
             <div class="design-by">
               <p class="design-by__content">Pellentesque <a href="">viverra</a> vulputate enim. Aliquam erat volutpat.</p>
-            </div>
-            
+            </div>            
           </div>
         </div>
       </div>
-    </footer>
-   
-
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-   <script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.your-class').slick({
-        
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  fade: true,
-  cssEase: 'linear'
-      }); 
-});
-  </script>
-  
+    </footer> 
   </body>
 </html>

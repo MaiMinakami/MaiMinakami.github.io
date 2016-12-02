@@ -9,15 +9,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "bootstrap": "^3.3.7",
     "grunt": "^1.0.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "slick-carousel": "^1.6.0"
-  },
-  "dependencies": {
-    "animate.css": "^3.5.2",
-    "bootstrap": "^3.3.7"
+    "grunt-contrib-watch": "^1.0.0"    
   }
 }
