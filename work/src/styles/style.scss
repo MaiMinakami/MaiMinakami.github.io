@@ -1,0 +1,64 @@
+//vendor
+@import 'vendor/easydropdown.css';
+@import 'vendor/bootstrap.css';
+@import 'vendor/bootstrap-theme.css';
+
+//base style
+@import 'base/variables';
+@import 'base/base';
+//modules
+
+@import 'titles/titles';
+@import 'modules/button';
+
+//other styles
+@import 'other_style/doska';
+@import 'other_style/styles_for_scroll';
+@import 'other_style/background-mainpage';
+//styles for blocks
+
+@import 'blocks/product-card';
+@import 'blocks/dropdown';
+@import 'blocks/popup-order';
+@import 'blocks/popup-card';
+
+
+//fonts
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../font/BebasNeue Regular.otf') format('otf');
+    src: url('../font/bebasneue_regular-webfont.woff') format('woff');
+    src: url('../font/bebasneue_regular-webfont.woff2') format('woff2');
+    
+    font-weight: normal;
+    font-style: normal;
+};
+
+@font-face {
+    font-family: 'Evogria';
+    src: url('../font/Evogria.otf') format('otf');
+    src: url('../font/evogria-webfont.woff') format('woff');
+    src: url('../font/evogria-webfont.woff2') format('woff2');
+
+    font-weight: normal;
+    font-style: normal;
+};
+
+@font-face {
+    font-family: 'GilroyBold';
+    src: url('../font/Gilroy-ExtraBold.otf') format('otf');
+    src: url('../font/gilroy-extrabold-webfont.woff') format('woff');
+    src: url('../font/gilroy-extrabold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+};
+
+@font-face {
+    font-family: 'GilroyLight';
+    src: url('../font/Gilroy-Light.otf') format('otf');
+    src: url('../font/gilroy-light-webfont.woff') format('woff');
+    src: url('../font/gilroy-light-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+};
